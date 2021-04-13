@@ -7,7 +7,7 @@
 let bird;
 let pipes = [];
 let score = 0;
-let lives = 5;
+let lives = 20;
 let scoreBoard;
 let lifeboard;
 let mic;
@@ -124,6 +124,6 @@ function reset() {
     bird = new Bird();
     score = 0;
     scoreBoard.innerHTML = score;
-    lives = 5;
+    lives = 20;
     lifeboard.innerHTML = lives;
 }
