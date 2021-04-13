@@ -1,0 +1,42 @@
+* {
+    background-color: rgb(28, 192, 217);
+}
+#life {
+    position: absolute;
+    z-index: 10;
+    color: rgb(14, 12, 138);
+    left: 50vw;
+    background-color: transparent;
+}
+#can {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: .15rem solid rgb(14, 12, 138);
+    border-radius: .2rem;
+    width: max-content;
+    margin: auto;
+}
+
+#scoreBoard {
+    position: absolute;
+    right:10vw;
+    top:45vh;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(57, 25, 115);
+    background: transparent;
+}
+
+
+input:first-of-type {
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+input:last-child {
+    position: absolute;
+    right: 5vw;
+    top: 15vh;
+}

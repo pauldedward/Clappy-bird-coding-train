@@ -4,44 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <script src="p5.min.js"></script>
-    <!-- <script src="p5.sound.min.js"></script> -->
+    <script src="p5.sound.min.js"></script>
     <script src="script.js" defer></script>
     <script src="bird.js" defer></script>
     <script src="pipe.js" defer></script>
-    <style>
-        * {
-            background-color: rgb(28, 192, 217);
-        }
-        #life {
-            position: absolute;
-            z-index: 10;
-            color: rgb(14, 12, 138);
-            left: 50vw;
-            background-color: transparent;
-        }
-        #can {
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-            border: .15rem solid rgb(14, 12, 138);
-            border-radius: .2rem;
-            width: max-content;
-            margin: auto;
-        }
-
-        #scoreBoard {
-            position: absolute;
-            right:10vw;
-            top:45vh;
-            font-size: 5rem;
-            margin: 0;
-            padding: 0;
-            color: rgb(57, 25, 115);
-        }
-        
-    </style>
+    <script src="sketch.js" defer></script>
 </head>
 <body>
     <h1 id="life"></h1>

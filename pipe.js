@@ -13,6 +13,7 @@ function Pipe() {
 
     this.show = function() {
         fill(255);
+        noStroke();
         if(this.highlight) {
             fill(255, 0, 0);
         }

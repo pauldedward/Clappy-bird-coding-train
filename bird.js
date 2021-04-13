@@ -8,6 +8,7 @@ function Bird() {
 
     this.show = function() {
         fill(77, 12, 138);
+        noStroke();
         ellipse(this.x, this.y, 20, 20);
     }
 
