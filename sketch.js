@@ -32,8 +32,9 @@ function setup() {
     mic.start();
     
 
-    sliderTop = createSlider(0, 1, 0.3, 0.01);
-    sliderBottom = createSlider(0, 1, 0.1, 0.01);
+    sliderTop = createSlider(0, 1, 0.1, 0.01);
+    
+    sliderBottom = createSlider(0, 1, 0.08, 0.01);
 
     clapping = false;
 }
