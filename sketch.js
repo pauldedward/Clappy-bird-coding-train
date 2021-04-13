@@ -16,6 +16,7 @@ let sliderBottom;
 let clapping;
 
 function setup() {
+
     getAudioContext().suspend();
 
     let canvas = createCanvas(500,600);
@@ -27,9 +28,10 @@ function setup() {
     scoreBoard = document.getElementById("scoreBoard");
     lifeboard = document.getElementById("life");
     lifeboard.innerHTML = lives;
-
     mic = new p5.AudioIn();
     mic.start();
+    
+
     sliderTop = createSlider(0, 1, 0.3, 0.01);
     sliderBottom = createSlider(0, 1, 0.1, 0.01);
 
@@ -39,7 +41,6 @@ function setup() {
 function draw() {
     
     background(28, 192, 217);
- 
     let vol = mic.getLevel();
 
     bird.show();
@@ -115,7 +116,7 @@ function keyPressed() {
 
 function mousePressed() {
     userStartAudio();
-}
+  }
 
 function reset() {
     pipes = [];
