@@ -1,3 +1,9 @@
+// const playerName = prompt("p for pause\nc for continue\nEnter your name");
+
+// if(playerName) {
+//     console.log(playerName);
+// }
+
 let bird;
 let pipes = [];
 let score = 0;
