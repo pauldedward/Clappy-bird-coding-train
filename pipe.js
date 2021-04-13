@@ -8,6 +8,7 @@ function Pipe() {
     this.w = 20;
     this.speed = -2;
     this.highlight = false;
+    this.alive = true;
     this.hit = false;
 
     this.show = function() {
@@ -32,7 +33,7 @@ function Pipe() {
     }
 
     this.hits = function(bird) {
-        if(bird.x > this.x && bird.x < this.x + this.w) {
+        if(bird.x > this.x && bird.x < this.x + this.w  ) {
             if(bird.y < this.top || bird.y > height - this.bottom) {
                 this.highlight = true;
                 this.hit = true;
