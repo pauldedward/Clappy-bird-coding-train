@@ -16,6 +16,7 @@ let sliderBottom;
 let clapping;
 
 function setup() {
+    getAudioContext().suspend();
 
     let canvas = createCanvas(500,600);
     canvas.parent("can");
@@ -110,6 +111,10 @@ function keyPressed() {
     if(key == "c") {
         loop();
     }
+}
+
+function mousePressed() {
+    userStartAudio();
 }
 
 function reset() {
